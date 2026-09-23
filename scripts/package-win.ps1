@@ -119,7 +119,7 @@ $cleanPatterns = @(
     "Makefile", "Gruntfile*", "Gulpfile*",
     ".travis.yml", ".github", ".circleci",
     "test", "tests", "__tests__", "spec", "specs",
-    "example", "examples", "doc", "docs",
+    "example", "examples",
     ".editorconfig", ".jshintrc", ".flowconfig"
 )
 # Protect the main app package from cleanup - its dist/ contains Vite chunks with hash names
