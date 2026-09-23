@@ -107,7 +107,7 @@ Write-Host "OpenClaw version: $version"
 openclaw_version=$version
 node_version=$nodeVersion
 platform=win-x64
-build_date=$(Get-Date -Format "yyyy-MM-dd HH:mm:ss UTC" -AsUTC)
+build_date=$((Get-Date).ToUniversalTime().ToString("yyyy-MM-dd HH:mm:ss 'UTC'"))
 "@ | Set-Content -Path "$BuildDir\VERSION" -Encoding UTF8
 
 # --- 7. Remove unnecessary files to reduce size ---
